@@ -33,6 +33,36 @@ object Tuple_PatterMatch extends App {
 
   // 4. How to use pattern matching on Tuples
 
+    val chetanyadetails = Tuple3("Chetanya",22,45000)
+    val rahuldetails = Tuple3("Rahul",25,50000)
+    val maheshdetails = Tuple3("Mahesh",24,100000)
+
+    val AllList = List(chetanyadetails,rahuldetails,maheshdetails)
+    println(AllList)
+    AllList.foreach(x => println(x))
+
+
+  val getTheDetails = AllList.foreach { tuple => {
+    tuple match {
+      case ("Chetanya",age,salary) => println(s"CandidateName = Chetanya,Age = ${age}, Salary = ${salary}")
+      case d if d._1 == "Rahul" => println(s"CandidateName = Rahul, Age = ${d._2}, Salary = ${d._3}")
+      case _ => None
+    }
+  }
+  }
+
+
+
+
+
+
+  // 5. Shortcut for creating  Tuples
+
+     // Using Tuples is so common that Scala has an elegant shortcut which we can use to create Tuples. You can simply enclose your data points within ()
+
+  val grillSandwich = ("Grill Sandwich", "Very Tasty", 25)
+  println(s"Grill Sandwich taste level = ${grillSandwich._2}, price = ${grillSandwich._3}")
+
 
 
 
