@@ -83,7 +83,9 @@ object PatternMatching extends App {
     }
     println(s"Berger price type = $priceType")
 
+   // Note: If you come from JAVA, you can think of the Any type similar to the Object class.
 
+  // In other words, Any is at the root of Scala's type hierarchy.
 
 
 
