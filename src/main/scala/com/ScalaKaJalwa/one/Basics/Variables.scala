@@ -1,4 +1,4 @@
-package Basics
+package com.ScalaKaJalwa.one.Basics
 
 import scala.Console.println
 

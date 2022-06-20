@@ -1,4 +1,4 @@
-package Basics
+package com.ScalaKaJalwa.one.Basics
 
 object PatternMatching extends App {
 
