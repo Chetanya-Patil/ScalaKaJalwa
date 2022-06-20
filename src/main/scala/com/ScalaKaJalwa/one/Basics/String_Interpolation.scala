@@ -1,4 +1,4 @@
-package Basics
+package com.ScalaKaJalwa.one.Basics
 
 object String_Interpolation extends App {
 
