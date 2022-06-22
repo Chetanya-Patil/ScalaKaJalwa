@@ -70,6 +70,7 @@ object ForLoop extends App {
   // 1. Try to use scala for making each and every type star struture.
   // 2. Try to get some realtime usecase of for loop it has lot many use in spark.
 
+  
 
 
 
