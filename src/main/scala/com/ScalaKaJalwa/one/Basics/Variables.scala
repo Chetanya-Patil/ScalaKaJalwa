@@ -14,7 +14,7 @@ object Variables extends App {
  // If we try changing the value of watchesToBuy to 10 it will reassignment to val.
  // And scala is statically typed language soo here in this IDE only will address that error. you will be able see by hover on it.
 
- watchesToBuy = 10
+ //watchesToBuy = 10
 
  // 2. Mutable variables
 
