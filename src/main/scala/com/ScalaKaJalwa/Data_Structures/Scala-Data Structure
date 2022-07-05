@@ -1,0 +1,80 @@
+
+Scala - Data Structure
+
+This split in 2 sections -->
+        1. Immutable collection
+        2. mutable collection
+
+Steps
+1. What is data structure ?
+
+     - In the field of computing in general, a Data Structure facilitates the storing, organization, and retrieval of your data.
+     - It is important to note that Scala makes a clear distinction on immutable and mutable collection data types.
+     - Immutable collections reside in the scala.collection.immutable package, and mutable collections are organized under the scala.collection.mutable package, respectively.
+     - Without any surprises, Scala favors immutable collections, and adds them in scope without requiring any explicit import statements.
+     - Mutation is however not always as bad as we think - there are problem sets that are inherently mutable in nature.
+     - Generally speaking, however, mutations make it difficult to, say, fan-out, or run computations in parallel.
+
+     - Before we proceed with showing how to use Scala’s Immutable and Mutable collections,
+       it would be good to first run through a quick review of the common data structures.
+
+     - The Scala programming language provides a wide range of data structures out-of-the-box,
+       which we will see shortly and, broadly speaking, these can be grouped into an array, a map, a list, a tree, a set and a queue.
+
+
+2. An Array Data Structure
+
+     - An Array is a data structure where each elements is stored in a continuous sequence and referenced by an index.
+     - Arrays are great for random access, and thanks to the index facility, it forms the basis of other data structures, such as, lists, queues, stacks and trees.
+     - Consider the simple array below which stores the letter a,b,c and d in their correspoding indices of 0,1,2, and 3.
+
+     Array elements: [a][b][c][d]
+     Array index: 0 1 2 3
+
+3. A List Data Structure
+
+     - A List represents elements in sequence similar to an array, but each elements points to the next, or the previous element, as opposed to being contrained by an index.
+     - Consequently lists are great for dynamic sizing and they obviously do not fair well with random access of elements.
+     - In contrast,lists are ideally suited for Last In First Out(LIFO) access pattern.
+     - Therefore, a list can be used to implement a stack, where the last elements added to the list will be the first one to be retrieved.
+
+4. A map data structure
+
+     - A Map combine the semantics of arrays and list, whereby a given key points to a correspoinding element. Map data structures will typically make use of a hashing function in order to distribute and map keys to their values.
+     - With the key-to-value relationship, maps are significantly more adequate for fast lookups.
+
+
+5. A Set Data Structure
+
+     - A Set is a special data structure which enforces the uniqueness of data points.
+     - You would commonly use a set to store referential data, such as, a list of user logins, or user ids that should not be duplicated.
+     - The use of sets have obvious roots in mathematics252 to facilitate operations, such as, union, intersection, and set difference.
+
+
+6. A Queue Data Structure
+
+     - A Queue stored elements in sequence similar to an array.
+     - It however, facilitates First In First Out (FIFO) behaviour, whereby the first elements which was added to the queue will be the first one to be removed in an operation commonly referred to as dequeue.
+     - Conversely, additional elements are added to the end of the queue data structure using an enqueue operation.
+     - Queues are obviously useful whenever you require a FIFO semantic.
+     - Example to use : serving the first customer in line at a shop.
+
+7. A Tree Data Structure
+
+     - A Tree is a hierarchical data structure that store elements at a root node, and branches off into subsequent child nodes.
+     - The use of trees are especially convenient in the applications of indexing, searching, as well as in data science for predictive analysis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
